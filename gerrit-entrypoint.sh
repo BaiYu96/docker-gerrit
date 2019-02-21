@@ -280,6 +280,7 @@ done
     [ -z "${SMTP_ENCRYPTION}" ]      || set_gerrit_config sendemail.smtpEncryption "${SMTP_ENCRYPTION}"
     [ -z "${SMTP_CONNECT_TIMEOUT}" ] || set_gerrit_config sendemail.connectTimeout "${SMTP_CONNECT_TIMEOUT}"
     [ -z "${SMTP_FROM}" ]            || set_gerrit_config sendemail.from "${SMTP_FROM}"
+    [ -z "${SMTP_SSLVERIFY}" ]            || set_gerrit_config sendemail.sslverify "${SMTP_SSLVERIFY}"
   fi
 
   #Section user
