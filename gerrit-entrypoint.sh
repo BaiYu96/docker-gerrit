@@ -45,6 +45,11 @@ if [ "$1" = "/gerrit-start.sh" ]; then
   # Install external plugins
   su-exec ${GERRIT_USER} cp -f ${GERRIT_HOME}/delete-project.jar ${GERRIT_SITE}/plugins/delete-project.jar
   su-exec ${GERRIT_USER} cp -f ${GERRIT_HOME}/events-log.jar ${GERRIT_SITE}/plugins/events-log.jar
+  su-exec ${GERRIT_USER} cp -f ${GERRIT_HOME}/commit-message-length-validator.jar ${GERRIT_SITE}/plugins/commit-message-length-validator.jar
+  su-exec ${GERRIT_USER} cp -f ${GERRIT_HOME}/download-commands.jar ${GERRIT_SITE}/plugins/download-commands.jar
+  su-exec ${GERRIT_USER} cp -f ${GERRIT_HOME}/hooks.jar ${GERRIT_SITE}/plugins/hooks.jar
+  su-exec ${GERRIT_USER} cp -f ${GERRIT_HOME}/replication.jar ${GERRIT_SITE}/plugins/replication.jar
+  su-exec ${GERRIT_USER} cp -f ${GERRIT_HOME}/reviewnotes.jar ${GERRIT_SITE}/plugins/reviewnotes.jar
   #su-exec ${GERRIT_USER} cp -f ${GERRIT_HOME}/importer.jar ${GERRIT_SITE}/plugins/importer.jar
 
   # Provide a way to customise this image
